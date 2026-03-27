@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nusa Alam Trans</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -16,14 +17,38 @@
         <li><a href="#packages">Tour Packages</a></li>
         <li><a href="#transport">Transport</a></li>
         <li><a href="#contact">Contact</a></li>
+        <!-- Language Switch -->
+        <li>
+          <select id="languageSwitcher">
+            <option value="en">English</option>
+            <option value="cn">中文</option>
+            <option value="id">Indonesia</option>
+          </select>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Slider -->
   <section id="home" class="hero">
-    <h2>Private East Java Tours</h2>
-    <p>Bromo Sunrise • Ijen Blue Fire • De Djawatan Forest</p>
+    <div class="slider">
+      <img src="bromo.jpg" alt="Bromo Sunrise" class="slide active">
+      <img src="ijen.jpg" alt="Ijen Blue Fire" class="slide">
+      <img src="de_djawatan.jpg" alt="De Djawatan Forest" class="slide">
+      <img src="tumpak_sewu.jpg" alt="Tumpak Sewu Waterfall" class="slide">
+    </div>
+    <div class="lang en">
+      <h2>Private East Java Tours</h2>
+      <p>Bromo • Ijen • De Djawatan • Tumpak Sewu</p>
+    </div>
+    <div class="lang cn">
+      <h2>东爪哇私人旅游</h2>
+      <p>布罗莫 • 伊真 • 德贾瓦坦 • 图姆帕克塞武瀑布</p>
+    </div>
+    <div class="lang id">
+      <h2>Tur Privat Jawa Timur</h2>
+      <p>Bromo • Ijen • De Djawatan • Tumpak Sewu</p>
+    </div>
   </section>
 
   <!-- Packages -->
@@ -31,48 +56,30 @@
     <h2>Tour Packages</h2>
 
     <!-- English -->
-    <div class="package">
+    <div class="lang en">
       <h3>Juanda – Bromo – Juanda (2D1N)</h3>
-      <p>Avanza/Xenia (max 4 pax), driver, fuel, toll, parking included.</p>
-      <p>Transparent price: Rp6.800.000</p>
-      <p><strong>Affordable private tour with safe & reliable service.</strong></p>
-    </div>
-
-    <div class="package">
-      <h3>Juanda – Bromo – Juanda (2D1N)</h3>
-      <p>Innova (max 4 pax), driver, fuel, toll, parking included.</p>
-      <p>Transparent price: Rp7.000.000</p>
-      <p><strong>Comfortable private tour with professional driver.</strong></p>
+      <p>Avanza/Xenia (max 4 pax) – Rp6.800.000</p>
+      <p>Innova (max 4 pax) – Rp7.000.000</p>
+      <p>Hiace Commuter (max 10 pax) – Rp12.000.000</p>
+      <p>Private car, driver, fuel, toll, parking included.</p>
     </div>
 
     <!-- Mandarin -->
-    <div class="package">
+    <div class="lang cn">
       <h3>泗水 – 布罗莫 – 泗水 (2天1夜)</h3>
-      <p>Avanza/Xenia（最多4人），司机、燃油、过路费、停车费全包。</p>
-      <p>透明价格：Rp6.800.000</p>
-      <p><strong>经济实惠，安全可靠的私人旅游。</strong></p>
-    </div>
-
-    <div class="package">
-      <h3>泗水 – 布罗莫 – 泗水 (2天1夜)</h3>
-      <p>Innova（最多4人），司机、燃油、过路费、停车费全包。</p>
-      <p>透明价格：Rp7.000.000</p>
-      <p><strong>舒适的私人旅游，专业司机服务。</strong></p>
+      <p>Avanza/Xenia（最多4人）– Rp6.800.000</p>
+      <p>Innova（最多4人）– Rp7.000.000</p>
+      <p>Hiace Commuter（最多10人）– Rp12.000.000</p>
+      <p>私人车辆，司机、燃油、过路费、停车费全包。</p>
     </div>
 
     <!-- Bahasa Indonesia -->
-    <div class="package">
+    <div class="lang id">
       <h3>Juanda – Bromo – Juanda (2H1M)</h3>
-      <p>Avanza/Xenia (maks 4 orang), sopir, BBM, tol, parkir sudah termasuk.</p>
-      <p>Harga transparan: Rp6.800.000</p>
-      <p><strong>Paket hemat, aman & nyaman.</strong></p>
-    </div>
-
-    <div class="package">
-      <h3>Juanda – Bromo – Juanda (2H1M)</h3>
-      <p>Innova (maks 4 orang), sopir, BBM, tol, parkir sudah termasuk.</p>
-      <p>Harga transparan: Rp7.000.000</p>
-      <p><strong>Paket nyaman dengan sopir profesional.</strong></p>
+      <p>Avanza/Xenia (maks 4 orang) – Rp6.800.000</p>
+      <p>Innova (maks 4 orang) – Rp7.000.000</p>
+      <p>Hiace Commuter (maks 10 orang) – Rp12.000.000</p>
+      <p>Mobil pribadi, sopir, BBM, tol, parkir sudah termasuk.</p>
     </div>
   </section>
 
@@ -82,16 +89,34 @@
     <ul>
       <li>Avanza/Xenia (max 4 pax) – Rp6.800.000</li>
       <li>Innova (max 4 pax) – Rp7.000.000</li>
-      <li>Hiace (max 10 pax)</li>
+      <li>Hiace Commuter (max 10 pax) – Rp12.000.000</li>
     </ul>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p><strong>WhatsApp:</strong> +62-812-xxxx-xxxx</p>
-    <p><strong>Email:</strong> info@nusaalamtrans.com</p>
-    <p><strong>WeChat:</strong> Scan QR Code for booking</p>
+
+    <!-- English -->
+    <div class="lang en">
+      <p><strong>WhatsApp:</strong> +62-812-xxxx-xxxx</p>
+      <p><strong>Email:</strong> info@nusaalamtrans.com</p>
+      <p><strong>WeChat:</strong> Scan QR Code for booking</p>
+    </div>
+
+    <!-- Mandarin -->
+    <div class="lang cn">
+      <p><strong>WhatsApp:</strong> +62-812-xxxx-xxxx</p>
+      <p><strong>电子邮件:</strong> info@nusaalamtrans.com</p>
+      <p><strong>微信:</strong> 扫描二维码预订</p>
+    </div>
+
+    <!-- Bahasa Indonesia -->
+    <div class="lang id">
+      <p><strong>WhatsApp:</strong> +62-812-xxxx-xxxx</p>
+      <p><strong>Email:</strong> info@nusaalamtrans.com</p>
+      <p><strong>WeChat:</strong> Scan QR Code untuk booking</p>
+    </div>
   </section>
 
   <!-- Footer -->
